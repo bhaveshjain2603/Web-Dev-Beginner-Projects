@@ -1,1 +1,1 @@
-# Web-Dev-Beginner-Projects
+Beginner Projects made using HTML, CSS and JAVASCRIPT

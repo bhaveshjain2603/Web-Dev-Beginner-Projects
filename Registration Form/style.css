@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right bottom, rgb(91, 74, 189), rgb(67, 255, 199));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box{
+    width: 100%;
+    max-width: 400px;
+    background-color: rgb(166, 207, 200);
+    border-radius: 8px;
+    padding: 20px 28px;
+    margin-inline: 20px;
+}
+
+.form-box header h1{
+    text-align: center;
+    color: rgb(42, 42, 252);
+    font-size: 30px;
+}
+
+.form-box form{
+    margin: 20px;
+}
+
+input{
+    width: 100%;
+    padding: 18px 16px;
+    border: none;
+    outline: none;
+    background-color: rgb(235, 232, 232);
+    margin: 10px 0px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+input[type="text"]{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(76, 76, 234);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+a:hover{
+    color: rgb(0, 0, 249)
+}
+
+input[type="button"]{
+    margin-top: 24px;
+    background-color: rgb(70, 70, 234);
+    color: white;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .1s;
+}
+
+input[type="button"]:hover{
+    background-color: rgb(31, 31, 255);
+}
+
+.or{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 20px;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+}
+
+.links a img{
+    max-height: 35px;
+    margin-inline: 20px;
+}
+
+.links a img:hover{
+    transition: 3s;
+}
+
+.signup{
+    margin-block: 20px;
+    text-align: center;
+}
+
+.signup a{
+    font-size: 15px;
+    color: rgb(70, 70, 205);
+    font-weight: 700;
+}
+
+.signup a:hover{
+    color: rgb(24, 24, 253);
+    text-decoration: underline 2px;
+    text-underline-offset: 4px;
+}

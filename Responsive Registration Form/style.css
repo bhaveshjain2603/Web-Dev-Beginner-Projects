@@ -41,14 +41,6 @@ body{
     color: rgb(95, 95, 95);
 }
 
-.form.login form i.bx-envelope{
-    position: absolute;
-    right: 45px;
-    transform: translateY(73px);
-    font-size: 18px;
-    color: rgb(0, 0, 0);
-}
-
 .form.login{
     background-color: rgb(239, 239, 239);
     margin-top: 20px;

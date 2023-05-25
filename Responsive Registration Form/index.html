@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & SignUp Form</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <section class="wrapper">
+        <div class="form signup">
+            <header>Signup</header>
+            <form action="#">
+                <input type="text" placeholder="Full Name" required/>
+                <i class='bx bxs-user'></i>
+                <input type="text" placeholder="Email address" required/>
+                <i class='bx bx-envelope' ></i>
+                <input type="password" placeholder="Create Password" required/>
+                <input type="password" placeholder="Confirm Password" required/>
+                <div class="checkbox">
+                    <input type="checkbox" id="signupCheck">
+                    <label for="signupCheck">I accept all terms and conditions</label>
+                </div>
+                <input type="submit" value="SignUp">
+            </form>  
+        </div>
 
+        <div class="form login">
+            <header>Login</header>
+            <form action="#">
+                <input type="text" placeholder="Email address" required/>
+                <i class='bx bx-envelope' ></i>
+                <input type="password" placeholder="Password" required/>
+                <a href="">Forgot Password?</a>
+                <input type="submit" value="Login">
+            </form>  
+            <div class="line"></div>
+            <div class="logo">
+                <a href="https://www.facebook.com/"><img src="fb.png" alt></a>
+                <a href="https://accounts.google.com/v3/signin/identifier?dsh=S-1492437228%3A1684316144096499&authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F&ec=GAlAwAE&hl=en&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession"><img src="google.png" alt></a>
+                <a href="https://twitter.com/i/flow/login"><img src="twitter.png" alt></a>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

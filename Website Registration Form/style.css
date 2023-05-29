@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    z-index: 100;
+    padding: 0px 20px;
+}
+
+.nav{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.nav_logo,
+.nav_link,  
+.button{
+    color: rgb(196, 196, 196);
+}
+
+.button{
+    padding: 9px 20px 10px;
+    border-radius: 8px;
+    border: 2px solid white;
+    background: transparent;
+    cursor: pointer;
+}
+
+.button:hover{
+    color: white;
+    transform: scale(1.02);
+}
+
+.nav,
+.nav_item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.nav_logo{
+    font-size: 30px;
+    color: white;
+}
+
+.nav_item{
+    column-gap: 30px;
+}
+
+.nav_link:hover{
+    color: white;
+}
+
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(bg.jpg);
+    background-size: cover;
+}
+
+.home::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    opacity: 0;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-out;
+}
+
+.home.show::before{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.form_container{
+    max-width: 320px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1.2);
+    z-index: 101;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease-out;
+}
+
+.home.show .form_container{
+    transform: translate(-50%,-50%) scale(1);
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.5s ease-out;
+}
+
+
+.signup_form{
+    display: none;
+}
+
+.form_container.active .signup_form{
+    display: block;
+}
+
+.form_container.active .login_form{
+    display: none;
+}
+
+.form-close{
+    position: absolute;
+    right: 18px;
+    top: 15px;
+    font-size: 22px;
+    color: black;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.form_container h2{
+    font-size: 28px;
+    text-align: center;
+}
+
+.input_box{
+    position: relative;
+    margin-top: 25px;
+    width: 100%;
+    height: 40px;
+}
+
+.input_box input{
+    padding: 0px 30px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1.9px solid #aaaaaa;
+    color: rgb(86, 86, 86);
+}
+
+.input_box input:focus{
+    border-color: blueviolet;
+}
+
+.input_box i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.input_box i.email,
+.input_box i.lock{
+    left: 0;
+    color: grey;
+    transform: translateY(-9px);
+}
+
+.input_box input:focus ~ i.email,
+.input_box input:focus ~ i.lock{
+    color: rgb(155, 87, 219);
+}
+
+.input_box i.pw_hide{
+    right: 0;
+    color: grey;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.option_field{
+    margin-top: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form_container a{
+    color: rgb(140, 54, 220);
+    font-size: 14px;
+}
+
+.form_container a:hover{
+    color: rgb(112, 0, 216);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.checkbox{
+    display: flex;
+    white-space: nowrap;
+    column-gap: 6px;
+}
+
+.checkbox input{
+    accent-color: rgb(0, 25, 216);
+}
+
+.checkbox label{
+    cursor: pointer;
+    font-size: 14px;
+    color: rgb(1, 1, 57);
+}
+
+.form_container .button{
+    width: 100%;
+    margin-top: 25px;
+    background-color: rgb(143, 24, 255);
+    color: white;
+    font-size: 18px;
+    font-weight: 550;
+    padding: 15px 0;
+}
+
+.form_container .button:hover{
+    background-color: rgb(131, 0, 253);
+    color: white;
+    transform: scale(1.03);
+}
+
+.form_container .login_signup{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 15px;
+}
+.form_container .login_signup a{
+    color: rgb(95, 0, 184);
+    font-size: 16px;
+}
+
+.form_container .login_signup a:hover{
+    text-underline-offset: 3px;
+}
+
+
+.input_box i.user{
+    left: 0;
+    color: grey;
+    transform: translateY(-10px);
+}
+
+.input_box input:focus ~ i.user,
+.input_box input:focus ~ i.email,
+.input_box input:focus ~ i.lock{
+    color: rgb(155, 87, 219);
+}
